@@ -3,3 +3,7 @@
 ################################################################################
 
 /src/Syngen/.vs/Syngen/v16
+/.vs
+/src/Syngen/Syngen/obj
+/src/Syngen/.vs/Syngen/DesignTimeBuild
+/src/Syngen/Syngen.Core/obj
