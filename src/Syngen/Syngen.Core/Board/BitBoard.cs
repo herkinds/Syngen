@@ -11,7 +11,7 @@ namespace Syngen.Core
             _internal = @internal;
         }
 
-        public BitBoard Operate(BitBoard other)
+        public BitBoard Merge(BitBoard other)
             => new BitBoard(_internal & other._internal);
 
         public BitBoard Complement()
