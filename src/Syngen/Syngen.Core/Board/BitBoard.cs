@@ -1,28 +1,33 @@
-﻿using System;
-
-namespace Syngen.Core
+﻿namespace Syngen.Core
 {
     public struct BitBoard
     {
-        private ulong _internal;
+        private readonly ulong _value;
 
-        public BitBoard(ulong @internal)
+        public BitBoard(ulong value)
         {
-            _internal = @internal;
+            _value = value;
         }
 
         public BitBoard Merge(BitBoard other)
-            => new BitBoard(_internal & other._internal);
+            => new BitBoard(_value & other._value);
 
         public BitBoard Complement()
-            => new BitBoard(~_internal);
+            => new BitBoard(~_value);
 
         public BitBoard Empty()
             => new BitBoard(0);
 
         public override string ToString()
-        {
-            return _internal.ToString();
-        }
+            => _value.ToString();
+
+        public override bool Equals(object obj)
+            => _value.Equals(obj);
+
+        public override int GetHashCode()
+            => _value.GetHashCode();
+
+        public static implicit operator ulong(BitBoard board)
+            => board._value;
     }
 }

@@ -7,3 +7,5 @@
 /src/Syngen/Syngen/obj
 /src/Syngen/.vs/Syngen/DesignTimeBuild
 /src/Syngen/Syngen.Core/obj
+/src/Syngen/Syngen/bin/Debug/netcoreapp3.1
+/src/Syngen/Syngen.Core/bin/Debug/netcoreapp3.1
