@@ -6,7 +6,7 @@ namespace Syngen.Core
     {
         private ulong _internal;
 
-        private BitBoard(UInt64 @internal)
+        public BitBoard(ulong @internal)
         {
             _internal = @internal;
         }
