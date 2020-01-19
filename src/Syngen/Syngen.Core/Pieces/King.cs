@@ -1,6 +1,6 @@
 ﻿namespace Syngen.Core.Pieces
 {
-    public sealed class King : AbstractPiece
+    public sealed class King : Piece
     {
         public override char Abbreviation => 'K';
         public override string Name => "King";

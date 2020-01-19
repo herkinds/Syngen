@@ -1,9 +1,9 @@
 ﻿namespace Syngen.Core.Pieces
 {
-    public sealed class Rook : AbstractPiece
+    public sealed class Rook : Piece
     {
         public override char Abbreviation => 'R';
         public override string Name => "Rook";
-        public override uint Value => 5;
+        public override int Value => 5;
     }
 }

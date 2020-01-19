@@ -6,6 +6,6 @@ namespace Syngen.Core.Pieces
     {
         char Abbreviation { get; }
         string Name { get; }
-        uint Value { get; }
+        int Value { get; }
     }
 }

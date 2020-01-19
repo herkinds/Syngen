@@ -2,6 +2,9 @@
 {
     public struct BitBoard
     {
+        public static BitBoard Empty
+            => new BitBoard(0);
+
         private readonly ulong _value;
 
         public BitBoard(ulong value)
@@ -14,9 +17,6 @@
 
         public BitBoard Complement()
             => new BitBoard(~_value);
-
-        public BitBoard Empty()
-            => new BitBoard(0);
 
         public override string ToString()
             => _value.ToString();
