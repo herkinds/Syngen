@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Syngen.Core
+namespace Syngen.Core.Board
 {
     public interface IBoardConfiguration
     {
