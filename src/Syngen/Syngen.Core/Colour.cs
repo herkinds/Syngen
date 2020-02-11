@@ -1,4 +1,4 @@
-﻿namespace Syngen.Core.Colours
+﻿namespace Syngen.Core
 {
     public enum Colour : byte
     {
