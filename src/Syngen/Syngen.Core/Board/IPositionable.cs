@@ -2,6 +2,6 @@
 {
     public interface IPositionable
     {
-        Position Position { get; }
+        IPosition Position { get; }
     }
 }
