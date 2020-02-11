@@ -2,6 +2,9 @@
 
 namespace Syngen.Core.Pieces
 {
+    /// <summary>
+    /// Interface for chess pieces.
+    /// </summary>
     public interface IPiece : IColourable
     {
         char Abbreviation { get; }
