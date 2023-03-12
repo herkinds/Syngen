@@ -5,7 +5,7 @@ namespace Syngen.Core.Pieces
     /// <summary>
     /// Interface for chess pieces.
     /// </summary>
-    public interface IPiece : IColourable
+    public interface IPiece
     {
         /// <summary>
         /// Abbreviation for the chess notation.
@@ -16,6 +16,11 @@ namespace Syngen.Core.Pieces
         /// Name of the piece.
         /// </summary>
         string Name { get; }
+
+        /// <summary>
+        /// Colour of the piece.
+        /// </summary>
+        Colour Colour { get; }
 
         /// <summary>
         /// Value of the piece.
